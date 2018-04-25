@@ -11,9 +11,7 @@ class ArtistsController < ApplicationController
    end
 
    post '/artists' do
-    # ...
-    # ^ code for creating and saving a new song
-    flash[:message] = "Successfully created artist."
+
     redirect to("/artists/#{@artist.slug}")
   end
 
