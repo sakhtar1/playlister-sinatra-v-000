@@ -11,9 +11,7 @@ class GenresController < ApplicationController
    end
 
    post '/genres' do
-    # ...
-    # ^ code for creating and saving a new song
-    flash[:message] = "Successfully created genre."
+  
     redirect to("/artists/#{@genre.slug}")
   end
 
